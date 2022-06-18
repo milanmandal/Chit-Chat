@@ -1,0 +1,36 @@
+.outerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1A1A1D;
+    font-size: small;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 8px;
+    height: 70vh;
+    width: 30vw;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .outerContainer {
+      height: 100%;
+    }
+  
+    .container {
+      width: 100vh;
+      height: 100vh;
+      border-radius:0;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 1200px) {
+    .container {
+      width: 60%;
+    }
+  }
